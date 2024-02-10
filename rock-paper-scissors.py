@@ -1,5 +1,4 @@
 import random
-import math
 
 def computer_choice():
     choices = ["rock", "paper", "scissors"]
