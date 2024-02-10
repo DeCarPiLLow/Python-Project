@@ -5,6 +5,8 @@ from planet import Planet
 pygame.init()
 
 WIDTH, HEIGHT = 1000, 1000
+YELLOW = (255, 255, 0)
+
 Window = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Planet Simulation")
 
