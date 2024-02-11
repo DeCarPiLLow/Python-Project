@@ -3,7 +3,7 @@ import math
 
 pygame.init()
 
-WIDTH, HEIGHT = 1000, 1000
+WIDTH, HEIGHT = 1300, 1000
 FONT = pygame.font.SysFont("comicsans", 16)
 
 class Planet:

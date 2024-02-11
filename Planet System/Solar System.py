@@ -3,7 +3,8 @@ from Planets import Planet
 
 pygame.init()
 
-WIDTH, HEIGHT = 1000, 1000
+WIDTH, HEIGHT = 1300, 1000
+WHITE = (255, 255, 255)
 YELLOW = (255, 255, 0)
 BLUE = (100, 149, 237)
 RED = (188, 39, 50)
@@ -15,13 +16,16 @@ def main():
     run = True
     clock = pygame.time.Clock()
 
-    Sun = Planet(0, 0, 30, YELLOW, 1.98892 * 10**30)
+    Sun = Planet(0, 0, 40, YELLOW, 1.98892 * 10**30)
     Sun.sun = True
 
-    Earth = Planet(-1*Planet.AU, 0, 16, BLUE, 5.9742 * 10**24)
+    Earth = Planet(-1*Planet.AU, 0, 20, BLUE, 5.9742 * 10**24)
     Earth.y_vel = 29.783 * 1000
 
-    Mars = Planet(-1.524*Planet.AU, 0, 12, RED, 6.39 * 10**23)
+    # Moon = Planet(-1.02*Planet.AU, 0, 5, WHITE, 7.4 * 10**22)
+    # Moon.y_vel = 30 * 1000
+
+    Mars = Planet(-1.524*Planet.AU, 0, 10, RED, 6.39 * 10**23)
     Mars.y_vel = 24.4 * 1000
 
     planets = [Sun, Earth, Mars]
